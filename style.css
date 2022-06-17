@@ -22,11 +22,13 @@
 
 *{
     box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
 }
 
 html{
     scroll-behavior: smooth;
-    background-color: white;
+    background-color: #F4E8D0;
+    
 }
 body{
     font-family:'Roboto',sans-serif;
@@ -36,7 +38,7 @@ body{
 h1{font-size: 3.5em;}
 h2{font-size:2.7em;}
 h3{font: size 2em;}
-p{font-size:1.25em;}
+/* p{font-size:1.25em;} */
 ul{list-style: none;}
 li{font-size: 1.25em;}
 
@@ -45,15 +47,15 @@ button{
     font-weight: bold;
     padding:10px 30px;
     border-radius:5px;
-    border:1px solid black;
-    box-shadow: 2px 2px 4px;
+    border:1px solid white;
+
     color: white;
-    background-color: #1E8BFB;
+    background-color: #0270AB;
 }
 
-button:hover{
+/* button:hover{
     background-color:#0A65C2;
-}
+} */
 
 .container{
     max-width: 1400px;
@@ -62,55 +64,70 @@ button:hover{
 .color-acento{color:skyblue}
 
 header{
-    background-color:#ffffff ;
     display: flex;
     flex-direction: column;
-
+    background-color:transparent;
+    position: fixed;
 }
 a{
-    text-decoration: none
+    text-decoration: none;
 }
 #logo{
     display:flex;
-    padding-right: 200px;
+    margin-right:200px ;
 }
 a p{
-    padding-top:10px ;
-}
-/* header p{
-    margin: 0;
-    padding: 25px 30px;
+    padding: auto;
+    color:#4483C9 ;
+    font-size:2rem;
     font-weight: bold;
-    color:#1E8BFB;
-    font-size: 1.6em;
-} */
+}
 
 header .container{
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 40px;
 
 }
 header .nav{
     display: flex;
     flex-direction: row;
-    text-align: center;
+    align-items: flex-end;
+    text-align: right;
     padding-bottom: 25px;
-}
-header img{
-    height: 90px;
-    margin-right:50px ;
-
 }
 nav a{
     padding: 5px 12px;
     text-decoration: none;
     font-weight:bold;
-    color: black;
+    color: white;
+    text-transform: uppercase;
 }
-/* nav a:hover{
-    color:white
-} */
+nav a:hover{
+    color:#a2a2a2 ;
+}
+
+section .container{
+    height:600px;
+}
+section .container img{
+    height: 300px;
+    /* width: 200px; */
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+
+#hero h1{
+    margin: 0px;
+}
+#hero h2{
+    font-family: 'Fascinate Inline', cursive;
+    margin: 0px;
+}
+
+
 
 #hero{
     display: flex;
@@ -118,14 +135,15 @@ nav a{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
     color: white;
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("img/ceviche.jpg");
+    ,url("https://www.recetasderechupete.com/wp-content/uploads/2014/09/ceviche_pescado_peruano.jpg");
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size:cover ;
     background-position: center center;
@@ -140,7 +158,7 @@ nav a{
 
 #somos-proya .container{
     text-align: center;
-    padding: 200px 12px;
+    padding: 150px 12px;
 }
 #nosotros{
     background-color: aliceblue;
@@ -281,13 +299,13 @@ footer .container{
     }
 
 
-    #somos-proya .img-container{
+    /* #somos-proya .img-container{
         background-image: url("img/somosproya.jpg");
         background-size: cover;
         background-position: center center;
         height: 400px;
         width: 400px; 
-    }
+    } */
 
     #nosotros .programas{
         display: flex;
